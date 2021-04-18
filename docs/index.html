@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Release</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <main></main>
+    <script class="dev-only" src="js-compiled/elm.js"></script>
+    <!-- prod-only <script src="elm.js"></script> -->
+    <script>
+        var app = Elm.Main.init({
+            node: document.querySelector('main'),
+            flags: {
+                width: window.innerWidth
+            }
+        });
+    </script>
+</body>
+
+</html>

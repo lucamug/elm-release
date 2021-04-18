@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+cmd/build
+node_modules/.bin/surge   ./build elm-release.surge.sh
+printf "\n\e[0;32mPublished at https://elm-release.surge.sh\e[0m\n\n"

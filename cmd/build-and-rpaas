@@ -1,0 +1,6 @@
+#!/bin/bash
+set -eu
+
+cmd/build
+cf push -f cmd/rpaas.yml -p build/
+printf "\n\e[0;32mPublished at https://EPRAM-2968.dev.jpe2.rpaas.net\e[0m\n\n"
